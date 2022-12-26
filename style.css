@@ -20,27 +20,36 @@
   .header {
     background-color: #9933cc65;
     color: #ffffff;
-    padding: 15px;
+    padding: 2px;
     text-align: center;
     box-shadow: 1 13px 3px #ffffff;
+    font-size: 40px;
+    border-radius: 20px;
   }
   
   .menu ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
   }
   
   .menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
+    padding-block: 28px;
+    text-align: center;
+    margin: 17px;
+    background-color: #6333e5c0;
     color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   
   .menu li:hover {
-    background-color: #0099cc;
+    background-color: #5800cc;
   }
   
   .aside {
@@ -49,7 +58,20 @@
     color: #ffffff;
     text-align: center;
     font-size: 14px;
+    border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  .heading {
+    color: #ffffff;
+    font-size: 40px;
+  }
+
+  p {
+    background-color: #d84bae8e;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
   }
   
   .footer {
@@ -80,6 +102,7 @@
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
   }
+
   @media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
@@ -100,3 +123,10 @@
   body {
     background: linear-gradient(120deg, #f5f251, #30f1b7, #8d8bf5);
   }
+
+  @media all and (max-width: 700px) {
+    .header { 
+      font-size: 20px;
+    }
+  }
+  
